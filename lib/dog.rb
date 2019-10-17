@@ -17,6 +17,7 @@ class Dog
 
   def self.print_all
     puts @@all.to_s.split('"').delete_if{|item| item.include?("<")||item.include?(">")}
+    #self.all.each{|dog| puts dog.name}
   end
 
   def save
